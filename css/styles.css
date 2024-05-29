@@ -1,0 +1,219 @@
+@keyframes fadeIn {
+    0% {
+        color: #D5C9C9
+    }
+    100% {
+        color: #F25430;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        background-color: #f27f42;
+        color: white;
+        border-radius: 5%;
+    }
+    100% {
+        background-color: #d5c9c9;
+        color: #f27f42;
+    }
+}
+
+@font-face {
+    font-family: 'Circe-25';
+    src: url(../fonts/CRC25.otf)
+}
+
+@font-face {
+    font-family: 'Circe-35';
+    src: url(../fonts/CRC35.otf)
+}
+
+@font-face {
+    font-family: 'Circe-55';
+    src: url(../fonts/CRC55.otf)
+}
+
+@font-face {
+    font-family: 'Circe-65';
+    src: url(../fonts/CRC65.otf)
+}
+
+/** body **/
+
+body {
+    background-color: white;
+    font-family: 'Circe-65', sans-serif;
+}
+
+body div {
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/** main **/
+
+#main .pattern  {
+    position: absolute;
+    z-index: 1;
+}
+
+#main .pattern img {
+    scale: -1 1;
+}
+
+#main .top {
+    z-index: 2;
+    display: flex;
+    flex-flow: row;
+}
+
+#main .top div {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: center;
+}
+
+#main .top div h2 {
+    color: #F25430;
+    font-size: xx-large;
+}
+
+#main .top div h1 {
+    color: #282D26;
+    font-weight: bolder;
+    font-size: 350%;
+    line-height: 80%;
+}
+
+/** about us **/
+
+#about-us {
+    display: flex;
+}
+
+#about-us .cards {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    width: 100vw;
+}
+
+#about-us .cards div {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex: 1;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    background-color: #2f4822;
+    border-radius: 3%;
+    flex-wrap: nowrap;
+}
+
+.card img {
+    flex: 3;
+}
+
+.card h2 {
+    flex: 10;
+    font-weight: bold;
+    font-size: xx-large;
+    color: #D5C9C9;
+    text-wrap: wrap;
+    text-align: start;
+}
+
+/** header **/
+
+header {
+    position: sticky;
+    display: flex;
+    font-family: 'Circe-55', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    background-color: #2f4822;
+}
+
+header .logo {
+    flex: 1.5;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+header .logo img {
+    width: 55%;
+    height: auto;
+}
+
+/**
+#f27f42
+    #94120d
+    #ebae99
+    #282d26
+    #675b2f
+    #f25430;
+**/
+
+header .menu {
+    display: flex;
+    flex: 6;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20%;
+}
+
+header .menu a {
+    color: #D5C9C9;
+    text-decoration: none;
+    text-wrap: nowrap;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+header .contact {
+    flex: 1;
+    align-self: center;
+    text-align: right;
+    margin: 3% 7% 3% 5%;
+}
+
+header .contact a {
+    background-color: #F25430;
+    color: #F5F5F5;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    text-align: center;
+    border-radius: 7%;
+    padding: 14%;
+    letter-spacing: 0.1rem;
+}
+
+
+/* Change the background color on mouse-over */
+header .menu a:hover {
+    color: #F25430;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+/* @media screen and (max-width: 500px) {
+    header .menu a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header-right {
+        float: none;
+    }
+} */
