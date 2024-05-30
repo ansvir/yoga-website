@@ -7,25 +7,24 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<header>
-    <div class="logo">
-        <img alt="logo" src="img/логотип для темного фона.svg" />
-    </div>
-    <div class="menu">
-        <a href="#main">Главная</a>
-        <a href="html/about-us.html">О нас</a>
-        <a href="html/pricing.html">Туры</a>
-        <a href="html/contacts.html">Портфолио</a>
-        <a href="html/contacts.html">Прайс-лист</a>
-        <a href="html/contacts.html">Отзывы</a>
-    </div>
-    <div class="contact">
-        <a href="html/contacts.html">Контакты</a>
-    </div>
-</header>
-
 <body>
-    <div>
+    <div id="header">
+        <header>
+            <div class="logo">
+                <img alt="logo" src="img/логотип для темного фона.svg" />
+            </div>
+            <div class="menu">
+                <a href="#main">Главная</a>
+                <a href="#about-us">О нас</a>
+                <a href="#tours">Туры</a>
+                <a href="#prices">Прайс-лист</a>
+            </div>
+            <div class="contact">
+                <a href="#contacts">Контакты</a>
+            </div>
+        </header>
+    </div>
+    <div id="content">
         <div id="main">
             <div class="pattern">
                 <img alt="Indian Pattern" src="img/паттерн_4.svg" />
@@ -42,31 +41,172 @@
             <div class="cards">
                 <div>
                     <div class="card">
-                        <img alt="Yog icon" src="img/йог.svg"/>
+                        <img alt="Yog icon" src="img/йог.svg" />
                         <h2>ПРОФЕССИОНАЛЬНЫЕ<br>ПРЕПОДАВАТЕЛИ</h2>
                     </div>
                     <div class="card">
-                        <img alt="Hills icon" src="img/горы.svg"/>
+                        <img alt="Hills icon" src="img/горы.svg" />
                         <h2>ВОССОЕДИНЕНИЕ<br>С ПРИРОДОЙ</h2>
                     </div>
                 </div>
                 <div>
                     <div class="card">
-                        <img alt="Hands icon" src="img/руки.svg"/>
+                        <img alt="Hands icon" src="img/руки.svg" />
                         <h2>ДРУЖЕСКАЯ<br>АТМОСФЕРА</h2>
                     </div>
                     <div class="card">
-                        <img alt="Sun icon" src="img/солнце.svg"/>
+                        <img alt="Sun icon" src="img/солнце.svg" />
                         <h2>ЗДОРОВОЕ<br>ПИТАНИЕ</h2>
                     </div>
                 </div>
             </div>
+            <div id="about-us-content">
+                <div class="pattern">
+                    <img alt="Indian Pattern 2" src="img/паттерн.svg" />
+                </div>
+                <div class="top">
+                    <img alt="Indian Woman" src="img/woman2.png" />
+                    <div>
+                        <h1>О НАС</h1>
+                        <h2>Уникальные йога-туры, сочетающие практику йоги с путешествиями по культурным достопримечательностям. 
+                            <br><br>
+                            Наша студия йоги предлагает возможность покинуть повседневные заботы и найти путь к внутреннему спокойствию, гармонии и здоровью через практику древнего искусства йоги.<br>
+                            Мы уважаем древние традиции йоги. Заботимся о благополучии и комфорте каждого участника. Мы поддержка и вдохновение для духовного и физического роста.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="title-background">
+                <div class="title">
+                    ФАКТЫ ПРО НАС
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <img src="img/лотос.svg" alt="Lotos icon" class="icon">
+                    <div class="number">3778</div>
+                    <div class="text">Участники</div>
+                </div>
+                <div class="cell">
+                    <img src="img/рука.svg" alt="Hand icon" class="icon">
+                    <div class="number">2985</div>
+                    <div class="text">Практик йоги</div>
+                </div>
+                <div class="cell">
+                    <img src="img/бамбук.svg" alt="Mambook icon" class="icon">
+                    <div class="number">3769</div>
+                    <div class="text">Счастливых участников</div>
+                </div>
+                <div class="cell">
+                    <img src="img/корова.svg" alt="Cow icon" class="icon">
+                    <div class="number">1004</div>
+                    <div class="text">Дней в Индии</div>
+                </div>
+            </div>
+        </div>
+        <div id="tours">
+            <div class="slider-title">
+                НАШИ ЙОГА-ТУРЫ
+            </div>
+            <div class="slider">
+                <div class="slide-container">
+                    <div class="slide">
+                        <img src="img/slide1.png" alt="Slide 1">
+                        <div class="slide-content">
+                            <div id="slide-sub-text"><img id="star-i" src="img/star.svg" alt="Start icon"/><span>4.9</span>&nbsp;(31)  Индия, Гималаи</div>
+                            <div id="slide-title">Северные земли: Гималаи</div>
+                            <div id="slide-sub-text">Захватывающее путешествие, слияние с тишиной и силой гор.</div>
+                            <div id="slide-sub-text">/  17 дней</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/slide2.png" alt="Slide 2">
+                        <div class="slide-content">
+                            <div id="slide-sub-text"><img id="star-i" src="img/star.svg" alt="Start icon"/><span>5.0</span>&nbsp;(44)  Индия, Гоа</div>
+                            <div id="slide-title">Треугольник Индии + Гоа</div>
+                            <div id="slide-sub-text">6 дней приключений + 6 дней на берегу океана</div>
+                            <div id="slide-sub-text">/  12 дней</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/slide3.png" alt="Slide 3">
+                        <div class="slide-content">
+                            <div id="slide-sub-text"><img id="star-i" src="img/star.svg" alt="Start icon"/><span>5.0</span>&nbsp;(53)  Индия, Керала</div>
+                            <div id="slide-title">Другая Индия. Путь души</div>
+                            <div id="slide-sub-text">Индия, которую выбрала твоя душа, что бы ты её услышала.</div>
+                            <div id="slide-sub-text">/  11 дней</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/slide4.png" alt="Slide 4">
+                        <div class="slide-content">
+                            <div id="slide-sub-text"><img id="star-i" src="img/star.svg" alt="Start icon"/><span>4.9</span>&nbsp;(47)  Индия, Гоа</div>
+                            <div id="slide-title">Йога и панчакарма в Гоа</div>
+                            <div id="slide-sub-text">Панчакарма (дословно «пять действий», «пять процедур»)</div>
+                            <div id="slide-sub-text">/  14 дней</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/slide5.png" alt="Slide 5">
+                        <div class="slide-content">
+                            <div id="slide-sub-text"><img id="star-i" src="img/star.svg" alt="Start icon"/><span>5.0</span>&nbsp;(24)  Индия, Непал</div>
+                            <div id="slide-title">Индия + Непал</div>
+                            <div id="slide-sub-text">Самые атмосферные, красивые места яркой Индии и загадочного Непала!</div>
+                            <div id="slide-sub-text">/  15 дней</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="prev">&lt;</button>
+                <button class="next">&gt;</button>
+            </div>
+        </div>
+        <div id="prices">
+            <div class="slider-title">
+                Прайс-лист
+            </div>
+            <div class="prices-main">
+                <div class="price-content">
+                    <div id="price-sub-text">СТАНДАРТНЫЙ АБОНЕМЕНТ: РАЗОВОЕ ПОСЕЩЕНИЕ</div>
+                    <div id="price-title">18 BYN</div>
+                </div>
+                <div class="price-content">
+                    <div id="price-sub-text">СТАНДАРТНЫЙ АБОНЕМЕНТ НА 8 ПОСЕЩЕНИЙ</div>
+                    <div id="price-title">135 BYN</div>
+                </div>
+                <div class="price-content">
+                    <div id="price-sub-text">СТАНДАРТНЫЙ АБОНЕМЕНТ НА 20 ПОСЕЩЕНИЙ</div>
+                    <div id="price-title">340 BYN</div>
+                </div>
+            </div>
         </div>
     </div>
+    <footer id="contacts">
+        <img src="img/горы.svg" alt="Hills image"/>
+        <div>
+            <div class="footer-title">Контакты</div>
+            <div class="footer-content">
+                Yog Studio
+                <br>
+                Студия йоги и йога-туров
+                <br>
+                <br>
+                +375 44 586 7127
+                <br>
+                +375 29 698 6495
+                <br>
+                <br>
+                yog.studio@gmail.com
+                <br>
+                yogstudio.by
+                <br>
+                <img id="logo" alt="Logo icon" src="img/логотип для темного фона.svg"/>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
-
-<footer>
-
-</footer>
 
 </html>
