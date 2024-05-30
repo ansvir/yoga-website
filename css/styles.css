@@ -382,6 +382,18 @@ body {
 }
 /** header **/
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -15px;
+}
+  
+.image-container img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
 header {
     margin: -1%;
     position: fixed;
